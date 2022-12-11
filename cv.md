@@ -1,10 +1,10 @@
-====
+===
 
 ![Alt-Моё фото](https://sun9-52.userapi.com/impg/kTyI8xLU0eM3WEDa0EtWWKRUUnnkChYSTNPZ3A/KWqXJ_LMLF4.jpg?size=400x400&quality=95&sign=38b4dce755ff2f3331842215d5fefb69&type=album "Avatarka")
 
 # Artur Muradyan
 
-====
+---
 
 ## Contact information:
 
@@ -12,7 +12,7 @@
 - GitHub: [/Rutr4](https://github.com/Rutr4 "GitHub address")
 - Discord: @Rutr4
 
-====
+---
 
 ## About Me:
 
@@ -29,7 +29,7 @@ part-time education.
 
 Now I am actively engaged in training in the field of information technology and I want to become a front-end developer
 
-====
+---
 
 ## Skills and Proficiency:
 
@@ -40,7 +40,7 @@ Now I am actively engaged in training in the field of information technology and
 - VS Code, VS 2022
 - UML, MagicDraw
 
-====
+---
 
 ## Code Example:
 
@@ -53,14 +53,14 @@ let result = subtraction(2, 3);
 alert (result);
 ```
 
-====
+---
 
 ## Education:
 
 - Polytechnic College of Municipal Economy, radio engineer
 - St. Petersburg University of Peter the Great, programmer (in progress)
 
-====
+---
 
 ## Languages:
 
