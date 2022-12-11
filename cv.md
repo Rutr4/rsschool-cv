@@ -1,14 +1,20 @@
-Artur Muradyan
+====
 
-Junior Frontend Developer
+![Alt-Моё фото]()
 
-Contact information
+# Artur Muradyan
 
-Location: Russian Federation, Saint-Petersburg
-GitHub: /Rutr4
-Discord: @Rutr4
+====
 
-About Me:
+## Contact information:
+
+- Location: Russian Federation, Saint-Petersburg
+- GitHub: [/Rutr4](https://github.com/Rutr4 "GitHub address")
+- Discord: @Rutr4
+
+====
+
+## About Me:
 
 I was engaged in volumetric and surface mounting of printed circuit boards according to assembly and assembly documentation, made electrical panels for nuclear power plants, carried out tuning work,
 adjustment and testing of manufactured devices.
@@ -23,30 +29,40 @@ part-time education.
 
 Now I am actively engaged in training in the field of information technology and I want to become a front-end developer
 
-Skills and Proficiency:
+====
 
-HTML5, CSS3
-JavaScript, C#, C++ Basics
-Figma Basics
-Git, GitHub
-VS Code, VS 2022
-UML, MagicDraw
+## Skills and Proficiency:
 
-Code Example:
+- HTML5, CSS3
+- JavaScript, C#, C++ Basics
+- Figma Basics
+- Git, GitHub
+- VS Code, VS 2022
+- UML, MagicDraw
 
+====
+
+## Code Example:
+
+```
 function subtraction(a-b) {
-return a - b;
+    return a - b;
 }
 
 let result = subtraction(2, 3);
 alert (result);
+```
 
-Education:
+====
 
-Polytechnic College of Municipal Economy, radio engineer
-St. Petersburg University of Peter the Great, programmer (in progress)
+## Education:
 
-Languages:
+- Polytechnic College of Municipal Economy, radio engineer
+- St. Petersburg University of Peter the Great, programmer (in progress)
 
-Russian - Native
-English - B1
+====
+
+## Languages:
+
+- Russian - Native
+- English - B2
