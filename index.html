@@ -15,16 +15,17 @@
       <ul class="nav-list">
         <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
         <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
         <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main-container">
 
     <div class="user">
       <img class="user__img" src="assets/img/avatar.jpg" alt="Artur Muradyan (avatar)" width="320" height="320">
@@ -32,8 +33,9 @@
 
     <section class="section" id="profile">
       <h1 class="section-title">Artur Muradyan</h1>
-      <p>Junior Front-end developer</p>
+      <p>Junior Frontend developer</p>
     </section>
+
     <section class="section" id="contacts">
       <h2 class="section-title">contacts</h2>
       <ul>
@@ -42,6 +44,7 @@
         <li>Discord: @Rutr4</a></li>
       </ul>
     </section>
+
     <section class="section" id="summary">
       <h2 class="section-title">about me</h2>
       <p>I was engaged in volumetric and surface mounting of printed circuit boards according to assembly and assembly
@@ -59,6 +62,7 @@
         Now I am actively engaged in training in the field of information technology and I want to become a front-end
         develope.</p>
     </section>
+
     <section class="section" id="education">
       <h2 class="section-title">education</h2>
       <ul>
@@ -66,9 +70,9 @@
         <li>St. Petersburg University of Peter the Great, programmer (in progress)</li>
       </ul>
     </section>
+
     <section class="section" id="skills">
       <h2 class="section-title">skills</h2>
-
       <ul>
         <li>HTML5, CSS3</li>
         <li>JavaScript, C#, C++ Basics</li>
@@ -78,19 +82,29 @@
         <li>UML, MagicDraw</li>
         <li>Multisim, AutoCad</li>
       </ul>
-
     </section>
+
     <section class="section" id="code">
       <h2 class="section-title">code</h2>
       <code>
-        const list = [ 'a', 'b', 'c'] <br>
-        let i = 0 <br>
-        while (i &lt; list.length) { <br>
-          console.log(list[i]) //value <br>
-          console.log(i)       //index <br>
-          i = i + 1 <br>
-        }
+          const list = [ 'a', 'b', 'c'] <br>
+          let i = 0 <br>
+          while (i &lt; list.length) { <br>
+          &nbsp;&nbsp;console.log(list[i]) //value <br>
+          &nbsp;&nbsp;console.log(i)       //index <br>
+          &nbsp;&nbsp;i = i + 1 <br>
+          }
       </code>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">projects</h2>
+      <ul>
+        <li><a href="https://github.com/Rutr4/site-personal-blog">First site, practice at the university</a> </li>
+        <li><a href="https://github.com/Rutr4/site-layout">Site for submitting assignments for website layout and
+            prototyping</a></li>
+        <li><a href="https://github.com/Rutr4/rsschool-cv">RS School</a></li>
+      </ul>
     </section>
 
     <section class="section" id="languages">
@@ -102,9 +116,13 @@
     </section>
 
   </main>
+
   <footer>
-    в footer необходимо добавить ссылку на ваш гитхаб, год создания приложения, логотип курса <a
-      href="https://rs.school/js/"> со ссылкой на курс </a>
+    <a href="https://github.com/Rutr4">GH/Rutr4</a>
+    2022
+    <a href="https://rs.school/js/">
+      <img src="assets/svg/rs_school_js.svg" alt="Логотип курса" width="100px" height="100px">
+    </a>
   </footer>
 </body>
 
