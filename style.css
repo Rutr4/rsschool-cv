@@ -1,37 +1,125 @@
-/* Reset and base styles  */
-* {
-  padding: 0px;
-  margin: 0px;
-  border: none;
+/* Шрифты*/
+@font-face {
+  font-family: ChivoMono;
+  src: url("assets/fonts/ChivoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  src: url("assets/fonts/Merriweather-Regular.ttf");
 }
 
+/* Обнуление CSS */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 *,
-*::before,
-*::after {
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 :focus,
 :active {
-  /*outline: none;*/
+  outline: none;
 }
-
 a:focus,
 a:active {
-  /* outline: none;*/
+  outline: none;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
-/* Links */
-
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 a,
-a:link,
 a:visited {
-  /* color: inherit; */
   text-decoration: none;
-  /* display: inline-block; */
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
 }
 
-a:hover {
-  /* color: inherit; */
+/* Основные стили*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: "Merriweather", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444444;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+  border: 1px solid black;
+  background-color: rgb(255, 215, 190);
+}
+
+.user__img {
+  border-radius: 50%;
+  border: 10px solid #444444;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-title {
+  font-family: "ChivoMono", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
   text-decoration: none;
+  color: #829985;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #5d7260;
+}
+
+header {
+  background: rgb(255, 215, 190);
 }

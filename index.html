@@ -1,42 +1,111 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Это мой сайт</h1>
-      <p>Он хороший</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Эта страница</a></li>
-          <li><a href="catalog.html">Другая страница</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
-        </section>
-        <section>
-          <h2>Вторая секция</h2>
-          <p>Она тоже обо мне</p>
-        </section>
-        <section>
-          <h2>И третья</h2>
-          <p>Вы уже должны были начать догадываться.</p>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
-    </footer>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="user">
+      <img class="user__img" src="assets/img/avatar.jpg" alt="Artur Muradyan (avatar)" width="320" height="320">
+    </div>
+
+    <section class="section" id="profile">
+      <h1 class="section-title">Artur Muradyan</h1>
+      <p>Junior Front-end developer</p>
+    </section>
+    <section class="section" id="contacts">
+      <h2 class="section-title">contacts</h2>
+      <ul>
+        <li>Location: Russian Federation, Saint-Petersburg</li>
+        <li>GitHub: <a href="https://github.com/Rutr4">/Rutr4</a></li>
+        <li>Discord: @Rutr4</a></li>
+      </ul>
+    </section>
+    <section class="section" id="summary">
+      <h2 class="section-title">about me</h2>
+      <p>I was engaged in volumetric and surface mounting of printed circuit boards according to assembly and assembly
+        documentation, made electrical panels for nuclear power plants, carried out tuning work,
+        adjustment and testing of manufactured devices.
+        I also have experience in locksmithing.
+
+        In 2019, he graduated from the "Polytechnic College of Urban Economy" with honors in the specialty
+        "Radio Appliance Engineering".
+
+        At the moment I am a student of "Applied Informatics in the field
+        Information Resources" at Peter the Great St. Petersburg Polytechnic University,
+        part-time education.
+
+        Now I am actively engaged in training in the field of information technology and I want to become a front-end
+        develope.</p>
+    </section>
+    <section class="section" id="education">
+      <h2 class="section-title">education</h2>
+      <ul>
+        <li>Polytechnic College of Municipal Economy, radio engineer</li>
+        <li>St. Petersburg University of Peter the Great, programmer (in progress)</li>
+      </ul>
+    </section>
+    <section class="section" id="skills">
+      <h2 class="section-title">skills</h2>
+
+      <ul>
+        <li>HTML5, CSS3</li>
+        <li>JavaScript, C#, C++ Basics</li>
+        <li>Figma Basics</li>
+        <li>Git, GitHub, Jira</li>
+        <li>VS Code, VS 2022</li>
+        <li>UML, MagicDraw</li>
+        <li>Multisim, AutoCad</li>
+      </ul>
+
+    </section>
+    <section class="section" id="code">
+      <h2 class="section-title">code</h2>
+      <code>
+        const list = [ 'a', 'b', 'c'] <br>
+        let i = 0 <br>
+        while (i &lt; list.length) { <br>
+          console.log(list[i]) //value <br>
+          console.log(i)       //index <br>
+          i = i + 1 <br>
+        }
+      </code>
+    </section>
+
+    <section class="section" id="languages">
+      <h2 class="section-title">languages</h2>
+      <ul>
+        <li>Russian - Native</li>
+        <li>English - B1 (Intermediate)</li>
+      </ul>
+    </section>
+
+  </main>
+  <footer>
+    в footer необходимо добавить ссылку на ваш гитхаб, год создания приложения, логотип курса <a
+      href="https://rs.school/js/"> со ссылкой на курс </a>
+  </footer>
+</body>
+
 </html>
