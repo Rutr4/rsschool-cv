@@ -1,0 +1,178 @@
+/* fonts*/
+@font-face {
+  font-family: ChivoMono;
+  src: url("assets/fonts/ChivoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  src: url("assets/fonts/Merriweather-Regular.ttf");
+}
+
+/* dropping CSS */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+/* basic styles */
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444444;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  flex: 1 1 auto;
+  column-gap: 2%;
+}
+.header,
+.footer {
+  background: rgb(255, 215, 190);
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.nav-list,
+.footer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  margin-bottom: 2%;
+}
+.footer {
+  margin-top: 2%;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.link {
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #444444;
+  transition: color, box-shadow, 1s;
+}
+.link:visited {
+  color: #444444;
+}
+.link:hover {
+  box-shadow: 3px 3px black;
+  color: red;
+  border: none;
+}
+
+.user__img {
+  border: 10px solid #444444;
+  border-radius: 50%;
+}
+
+.section-title {
+  font-family: "ChivoMono", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+.section {
+  background-color: rgb(255, 215, 190);
+  box-shadow: 15px 15px 10px black;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px 0px;
+  width: 49%;
+}
+.section p {
+  padding-left: 10px;
+}
+@media (max-width: 1440px) {
+  .section {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+}
+
+section > ul > li::before {
+  content: "\27A4";
+  margin-left: 10px;
+  padding-right: 15px;
+}
+
+li {
+  line-height: 50px;
+}
