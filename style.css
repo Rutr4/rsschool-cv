@@ -1,4 +1,4 @@
-/* Шрифты*/
+/* Fonts*/
 @font-face {
   font-family: ChivoMono;
   src: url("assets/fonts/ChivoMono-VariableFont_wght.ttf");
@@ -8,7 +8,7 @@
   src: url("assets/fonts/Merriweather-Regular.ttf");
 }
 
-/* Обнуление CSS */
+/* dropping CSS */
 * {
   padding: 0;
   margin: 0;
@@ -60,13 +60,20 @@ img {
   vertical-align: top;
 }
 
-/* Основные стили*/
+/* basic styles */
 html {
   scroll-behavior: smooth;
 }
 html,
 body {
   height: 100%;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444444;
 }
 .wrapper {
   min-height: 100%;
@@ -87,14 +94,6 @@ body {
   padding: 15px;
 }
 
-body {
-  font-family: "Merriweather", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #444444;
-}
-
 .nav-list,
 .footer {
   display: flex;
@@ -102,24 +101,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+.header {
+  margin-bottom: 2%;
+}
+.footer {
+  margin-top: 2%;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
 
 .link {
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
   text-decoration: none;
-  color: black;
-  transition: color 0.5s;
+  color: #444444;
+  transition: color, box-shadow, 1s;
 }
-
+.link:visited {
+  color: #444444;
+}
 .link:hover {
+  box-shadow: 3px 3px black;
   color: red;
-}
-
-li {
-  line-height: 50px;
-}
-section > ul > li::before {
-  content: "\27A4";
-  margin-left: 10px;
-  padding-right: 15px;
+  border: none;
 }
 
 .user__img {
@@ -151,4 +161,14 @@ section > ul > li::before {
   .nav {
     flex-direction: column;
   }
+}
+
+section > ul > li::before {
+  content: "\27A4";
+  margin-left: 10px;
+  padding-right: 15px;
+}
+
+li {
+  line-height: 50px;
 }
